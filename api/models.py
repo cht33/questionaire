@@ -105,6 +105,8 @@ class Questions:
             for line in f:
                 col = line.strip('\r\n').split(', ')
                 rank, num = int(col[0]), int(col[1])
+                val = '-1'
+                if len(col) == 3: val = int(col[2])
                 q_list = f.readline().strip('\r\n').split('\t')
                 time_points = f.readline().strip('\r\n').split('\t')
                 time_points = [int(t) for t in time_points]
@@ -113,8 +115,10 @@ class Questions:
                 sess_len = len(q_list)
                 if sess_len > 20: continue
                 sess_lens.append(sess_lens)
+                print(val, q_list)
                 questions.append({
                     'rank': rank,
+                    'val': val,
                     'q_list': q_list,
                     'time_points': time_points,
                     'poi_lists': poi_lists

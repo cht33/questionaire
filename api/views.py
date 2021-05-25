@@ -10,10 +10,10 @@ QUSETION_START_POS = 0
 QUSETION_NUM = 10000
 
 # 是否打乱问题顺序
-QUESTION_SHUFFLE = True
+QUESTION_SHUFFLE = False
 
 # 数据集和结果保存路径
-QUESTION_DATA = 'data/example.txt'
+QUESTION_DATA = 'data/merged_info.txt'
 SAVE_PATH = 'data/results/'
 
 all_questions = Questions(QUESTION_DATA, QUESTION_SHUFFLE)
