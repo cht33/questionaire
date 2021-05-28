@@ -13,7 +13,8 @@ QUSETION_NUM = 10000
 QUESTION_SHUFFLE = False
 
 # 数据集和结果保存路径
-QUESTION_DATA = 'data/merged_info.txt'
+# QUESTION_DATA = 'data/tasks_shuffle.txt'
+QUESTION_DATA = 'data/final_tasks.txt'
 SAVE_PATH = 'data/results/'
 
 all_questions = Questions(QUESTION_DATA, QUESTION_SHUFFLE)

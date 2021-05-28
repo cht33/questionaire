@@ -115,7 +115,6 @@ class Questions:
                 sess_len = len(q_list)
                 if sess_len > 20: continue
                 sess_lens.append(sess_lens)
-                print(val, q_list)
                 questions.append({
                     'rank': rank,
                     'val': val,
